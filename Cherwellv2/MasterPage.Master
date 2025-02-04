@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title></title>
+        <style type="text/css">
+            .MyImageButton {
+                cursor: pointer;
+                cursor: hand;
+            }
+
+            .EditFormHeader td {
+                font-size: 14px;
+                padding: 4px !important;
+                color: #0066cc;
+            }
+
+            .wordEllipsis {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .RadGrid .rgFilterRow > td {
+                border: 1 !important; /** no border **/
+                border-color: #dedede;
+                border-width: 0 0 1px 1px;
+            }
+
+            .RadGrid_Bootstrap .rgFilterBox {
+                border-radius: 4px !important;
+            }
+
+            .filterbox_resize {
+                width: 10px !important;
+            }
+
+            .auto-style1 {
+                width: 330px;
+                height: 86px;
+            }
+
+            .RadLabel1 {
+                position: absolute;
+                right: 50px;
+                padding: 25px;
+                font-size: 22px;
+            }
+
+            .RadGrid .rgFilterBox {
+                width: calc(100%);
+            }
+
+            .riLabel {
+                width: 150px !important;
+                text-align: right !important;
+            }
+
+            .RadComboBox .rcbLabel {
+                width: 140px !important;
+                text-align: right !important;
+                padding-right: 10px !important;
+            }
+
+            .RadComboBox_Bootstrap {
+                width: 300px !important;
+            }
+
+                .RadComboBox_Bootstrap .rcbReadOnly {
+                    width: 124px !important;
+                }
+
+            .buttonDiv {
+                width: 228px !important;
+                display: flex;
+                justify-content: right;
+            }
+        </style>
+        <telerik:RadStyleSheetManager ID="RadStyleSheetManager1" runat="server" />
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <img alt="" class="auto-style1" src="Images/TallGrassLogo.png" />
+
+
+            <telerik:RadLabel ID="RadLabel1" runat="server" Text="Environment: TEST" AssociatedControlID="RadLabel1" ForeColor="#FF3300" CssClass="RadLabel1" />
+
+
+            <telerik:RadMenu ID="RadMenu1" runat="server" Width="112.25%">
+                <Items>
+                    <telerik:RadMenuItem NavigateUrl="Incident.aspx" Text="Incident" />
+                    <telerik:RadMenuItem NavigateUrl="Tasks.aspx" Text="Tasks" />
+                    <telerik:RadMenuItem NavigateUrl="ChangeIT.aspx" Text="Change - IT" />
+                    <telerik:RadMenuItem NavigateUrl="PPMProject.aspx" Text="PPM Project" />
+                    <telerik:RadMenuItem NavigateUrl="MOCLGC.aspx" Text="MOCLOGC-Kinder" />
+                    <telerik:RadMenuItem NavigateUrl="MOCTallgrass.aspx" Text="MOCTallgrass-Pre Cherwell" />
+                    <telerik:RadMenuItem NavigateUrl="CherwellMOCs.aspx" Text="Cherwell MOCs" />
+                </Items>
+            </telerik:RadMenu>
+
+
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
