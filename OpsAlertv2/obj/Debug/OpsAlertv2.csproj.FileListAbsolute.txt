@@ -1,0 +1,7 @@
+C:\Users\semebra1\source\repos\OpsAlertv2\OpsAlertv2\obj\Debug\OpsAlertv2.csprojAssemblyReference.cache
+C:\Users\semebra1\source\repos\OpsAlertv2\OpsAlertv2\obj\Debug\OpsAlertv2.dll.licenses
+C:\Users\semebra1\source\repos\OpsAlertv2\OpsAlertv2\obj\Debug\OpsAlertv2.csproj.CoreCompileInputs.cache
+C:\Users\semebra1\Source\Repos\Prod-Apps\OpsAlertv2\OpsAlertv2\obj\Debug\OpsAlertv2.csprojAssemblyReference.cache
+C:\Users\semebra1\Source\Repos\Prod-Apps\OpsAlertv2\OpsAlertv2\obj\Debug\OpsAlertv2.dll.licenses
+C:\Users\semebra1\Source\Repos\Prod-Apps\OpsAlertv2\OpsAlertv2\obj\Debug\OpsAlertv2.csproj.CoreCompileInputs.cache
+C:\Users\semebra1\source\repos\Prod-Apps\OpsAlertv2\OpsAlertv2\obj\Debug\OpsAlertv2.csproj.AssemblyReference.cache

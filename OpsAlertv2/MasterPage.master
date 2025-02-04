@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+            <title></title>
+            <style type="text/css">
+
+        .MyImageButton {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .EditFormHeader td {
+            font-size: 14px;
+            padding: 4px !important;
+            color: #0066cc;
+        }
+
+        .auto-style1 {
+            width: 330px;
+            height: 86px;
+        }
+
+        .RadLabel1 {
+            position:absolute;
+            right: 50px;
+            padding: 25px;
+            font-size: 22px;
+        }
+
+        .RadGrid .rgFilterRow > td {
+        border: 1!important; /** no border **/
+        border-color: #dedede;
+        border-width: 0 0 1px 1px;
+
+        }
+
+        .RadGrid_Bootstrap .rgFilterBox {
+        border-radius: 4px !important;
+
+        }
+
+            </style>
+            <telerik:RadStyleSheetManager ID="RadStyleSheetManager1" runat="server" />
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <img alt="" class="auto-style1" src="Images/TallGrassLogo.png" />
+
+
+        <telerik:RadLabel ID="RadLabel1" runat="server" Text="Environment: TEST" AssociatedControlID="RadLabel1" ForeColor="#FF3300" CssClass="RadLabel1" />           
+
+
+        <telerik:RadMenu ID="RadMenu1" runat="server" width="112.25%" >
+            <Items>
+                <telerik:RadMenuItem NavigateUrl="TAMIAlarms.aspx" Text="Tami Alarms" />
+                <telerik:RadMenuItem NavigateUrl="TAMILastRun.aspx" Text="Tami Last Run" />
+                <telerik:RadMenuItem NavigateUrl="TAMILookup.aspx" Text="Tami Lookup" />
+                <telerik:RadMenuItem NavigateUrl="ListCategory.aspx" Text="List Category" />
+            </Items>
+        </telerik:RadMenu>
+
+
+        <asp:ContentPlaceHolder id="mainContent" runat="server">
+            
+
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
